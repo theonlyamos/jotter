@@ -16,8 +16,8 @@ var dataCacheName = 'jotter-v1';
 var cacheName = 'jotter-final-1';
 var filesToCache = [
   'index.html',
- // 'favicon.ico',
-  'jotter.manifest',
+  'favicon.ico',
+  'jotter.webmanifest',
   'service-worker.js',
   'css/styles.css',
   'js/app.js'
