@@ -2,7 +2,7 @@
     "name": "Jotter",
     "short_name": "Jotter",
     "description": "A jotting progressive web application",
-    "start_url": "/jotter/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "theme_color": "#000",
     "background_color": "#fff",
