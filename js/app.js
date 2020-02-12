@@ -28,7 +28,7 @@
     }
 
     if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/pwa-examples/js13kpwa/sw.js');
+        navigator.serviceWorker.register('./service-worker.js');
     };
 
     document.addEventListener('click', function(e){
