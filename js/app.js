@@ -131,9 +131,10 @@
         }
         else {
             var template = document.getElementById('cardTemplate');
-
             
-            jots.push({"time": time, "content": content, "colors": colors})
+            
+            var jot = {"time": time, "content": content, "colors": colors}
+            jots.push(jot)
             
             localStorage.setItem('jots', JSON.stringify(jots))
 
@@ -141,7 +142,7 @@
             var card = template.cloneNode([true]);
             card.removeAttribute('hidden')
             card.removeAttribute('id')
-            card.classList.add(bg)
+            card.classList.add(app.colors[jot.colors].bg);
             card.querySelector(".jot-time").textContent = time;
             card.querySelector(".jot-body").textContent = content;
             
