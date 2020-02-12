@@ -2,8 +2,8 @@
     "use strict";
 
     window.addEventListener('load', () => {
-        let jots = localStorage.getItem('jots')
-        if (jots) {
+        if (localStorage.hasOwnProperty('jots')) {
+            let jots = localStorage.getItem('jots')
             app.load(jots)
         }
         else {
