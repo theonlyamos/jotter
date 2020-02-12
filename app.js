@@ -150,7 +150,7 @@
     }
 
     function loadJots(jots){
-        let jots = JSON.parse(jots)
+        var jots = JSON.parse(jots)
         document.getElementById("jotsContainer").innerHTML = ""
         for (let i = 0; i < jots.length; i++) {
             var jot = jots[i]
