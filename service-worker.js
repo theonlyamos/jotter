@@ -15,12 +15,12 @@
 var dataCacheName = 'jotter-v1';
 var cacheName = 'jotter-final-1';
 var filesToCache = [
-  './index.html',
+  'index.html',
  // 'favicon.ico',
-  './jotter.manifest',
-  './service-worker.js',
-  './css/styles.css',
-  './js/app.js'
+  'jotter.manifest',
+  'service-worker.js',
+  'css/styles.css',
+  'js/app.js'
 ];
 
 self.addEventListener('install', function(e) {
