@@ -4,7 +4,7 @@
     window.addEventListener('load', () => {
         if (localStorage.hasOwnProperty('jots')) {
             let jots = localStorage.getItem('jots')
-            app.load(jots)
+            if (jots) app.load(jots)
         }
         else {
             localStorage.setItem('jots', [])
